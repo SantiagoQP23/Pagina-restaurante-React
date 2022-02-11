@@ -1,0 +1,55 @@
+body {
+  overflow-x: hidden;
+}
+
+
+/* Navegacion */
+
+.menu {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.menu-oscuro {
+  background-color: #000;
+  margin-top: 0px;
+}
+
+
+/* Navegacion */
+
+.menu-items li a {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+}
+
+
+/* Navegacion */
+
+.menu_items li hover,
+li.active {
+  background-color: rgba(0, 0, 0, .3);
+  transition: .4s;
+}
+
+#call-to-action {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../recursos/seafood.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  width: 100vw;
+  text-align: center;
+  min-height: 100vh;
+  color: #fff;
+  padding-top: 150px;
+  background-attachment: fixed;
+}
+
