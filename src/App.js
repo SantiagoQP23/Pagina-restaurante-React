@@ -1,8 +1,8 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom';
 
 // EStilos
-import './styles/App.css'
+import './styles/App.css';
 
 // componentes
 import { Footer } from './components/Footer';

@@ -93,7 +93,7 @@ export const productos = [
     precioProducto: "10",
     descripcionProducto: "lkaskdfjfdslk",
     pathImg: "https://www.ensaladade.net/wp-content/uploads/2020/07/plato-final-ensaladas-de-mariscos.png",
-    idCategoria: 1
+    idCategoria: 7
   },
   {
     idProducto: 13,
@@ -101,7 +101,7 @@ export const productos = [
     precioProducto: "10",
     descripcionProducto: "lkaskdfjfdslk",
     pathImg: "https://marisqueriasite.files.wordpress.com/2016/02/piqueo-mariscos-14camarones.jpg",
-    idCategoria: 1
+    idCategoria: 7
   },
 ]
 

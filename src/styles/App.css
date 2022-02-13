@@ -14,7 +14,6 @@ body {
   border-bottom: 1px;
   box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
   text-align: center;
-  margin-top: 20px;
 }
 
 .menu-oscuro {
@@ -53,3 +52,6 @@ li.active {
   background-attachment: fixed;
 }
 
+.principal {
+  min-height: 80vh;
+}

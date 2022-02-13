@@ -11,19 +11,19 @@ export const Contacto = () => {
             <div className="form row">
 
               <div className="form-group col-12">
-                <label for="nombre">Nombre completo</label>
+                <label htmlFor="nombre">Nombre completo</label>
                 <input type="text" className="form-control" aria-describedby="nombreCompleto" placeholder="Ingrese su nombre" />
               </div>
 
 
               <div className="form-group col-12 ">
-                <label for="exampleInputEmail1">Email address</label>
+                <label htmlFor="exampleInputEmail1">Email address</label>
                 <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
               </div>
 
               <div className="form-group col-12 ">
-                <label for="exampleFormControlTextarea1">Comentarios</label>
-                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" value=" "></textarea>
+                <label htmlFor="exampleFormControlTextarea1">Comentarios</label>
+                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" ></textarea>
               </div>
 
             </div>

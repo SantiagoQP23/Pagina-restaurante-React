@@ -48,4 +48,12 @@ export const categorias = [
     precio: "",
 
   },
+  {
+    idCategoria: 7,
+    nombreCategoria: "Extras",
+    descripcionCategoria: "",
+    pathImg: "",
+    precio: "",
+
+  },
 ]

@@ -6,7 +6,13 @@ form{
 
 .productos{
   background-color: #eee;
-  min-height: 50vh;
+  padding: 10px;
+}
+
+.detalles{
+  border: 1px solid #ddd;
+  margin: 5px;
+  padding: 10px;
 }
 
 
@@ -16,5 +22,10 @@ form{
 }
 
 
+.informacion-pedido{
+  border: 1px solid #ddd;
+  margin-left: 10px;
+ 
 
+}
 
