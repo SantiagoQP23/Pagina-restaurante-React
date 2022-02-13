@@ -1,9 +1,21 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
+
+const useMountEffect = fun => useEffect(fun, []);
+
 
 export const Contacto = () => {
+
+  const principal = useRef(null);
+
+
+  const executeScroll = () => principal.current.scrollIntoView(false);
+
+
+  useMountEffect(executeScroll);
+
   return (
     <>
-      <main>
+      <main ref={principal}>
         <h1 className="text-center">FORMULARIO DE CONTACTO</h1>
         <div className="container">
 

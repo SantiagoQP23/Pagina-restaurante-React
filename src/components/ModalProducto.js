@@ -30,19 +30,19 @@ export const ModalProducto = (props) => {
           </ModalTitle>
         </ModalHeader>
         <ModalBody>
-          <div class="row">
+          <div className="row">
 
-            <div class="col-12 col-md-12  col-lg-6">
+            <div className="col-12 col-md-12  col-lg-6">
 
-              <div class="img-producto-modal">
+              <div className="img-producto-modal">
                 <img src={producto.pathImg}
-                  class="img-fluid img-producto" alt="..." />
+                  className="img-fluid img-producto" alt={"Imagen de " + producto.nombreProducto} />
               </div>
 
 
             </div>
 
-            <div class="col-12 col-md-12  col-lg-6">
+            <div className="col-12 col-md-12  col-lg-6">
               <h5>{producto.nombreProducto}</h5>
               <span>Camarón</span>
               <br />
@@ -50,7 +50,7 @@ export const ModalProducto = (props) => {
               <br />
               <p>{producto.descripcionProducto}</p>
 
-              <div class="inf-producto">
+              <div className="inf-producto">
 
                
               </div>

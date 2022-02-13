@@ -3,7 +3,7 @@ import { ReservacionPedido } from '../components/ReservacionPedido'
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 export const PagoPedido = () => {
 
@@ -24,7 +24,7 @@ export const PagoPedido = () => {
 
           <section className=' col-12 col-lg-6 info-pedido bg-light p-3'>
             <h4>Información del pedido</h4>
-            <table class="table table-striped">
+            <table className="table table-striped">
               <thead>
                 <tr>
                   <th scope="col">#</th>
@@ -48,7 +48,7 @@ export const PagoPedido = () => {
 
                 <tr>
 
-                  <td colspan="3">Total</td>
+                  <td colSpan="3">Total</td>
                   <td>$ {pedidoActivo.total}</td>
                 </tr>
               </tbody>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 
 import { useDispatch, useSelector } from 'react-redux';
@@ -44,7 +44,6 @@ export const ProductosPedido = ({ productos }) => {
 
     }
 
-    console.log(newDetalle);
     dispatch( detallePedidoStartAdded( newDetalle, Number(producto.precioProducto) ));
 
 

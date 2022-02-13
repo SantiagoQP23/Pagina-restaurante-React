@@ -1,9 +1,23 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
+
+
+const useMountEffect = fun => useEffect(fun, []);
 
 export const Reservacion = () => {
+
+
+  const principal = useRef(null);
+
+
+  const executeScroll = () => principal.current.scrollIntoView(false);
+
+
+  useMountEffect(executeScroll);
+
+
   return (
    
-    <main className=' principal'>
+    <main className='principal' ref={principal}>
     <h1 className="titulo text-center">Reservaciones</h1>
     <div className="container" >
 

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useEffect, useState, useRef } from 'react';
+import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
 // Data
@@ -9,15 +9,14 @@ import { productos } from '../data/productos';
 
 // Componentes
 import { FiltrosPedido } from '../components/FiltrosPedido';
-import { InformacionPedido } from '../components/InformacionPedido';
-import { ReservacionPedido } from '../components/ReservacionPedido';
-
-
 
 // Estilos
 import '../styles/pedidos.css';
 import { ProductosPedido } from '../components/ProductosPedido';
 import { DetallePedido } from '../components/DetallePedido';
+
+const useMountEffect = fun => useEffect(fun, );
+
 
 export const Pedidos = () => {
 
@@ -48,26 +47,27 @@ export const Pedidos = () => {
 
   useEffect(() => {
 
-    console.log("Cambiando categoria" + categoria)
+   
     obtenerProductos(categoria);
 
   }, [categoria]);
 
   useEffect(() => {
-    console.log("Renderizando")
     obtenerProductos(categoria);
 
   }, []);
 
+  const principal = useRef(null);
 
 
+  const executeScroll = () => principal.current.scrollIntoView(false);
 
 
-
+  useMountEffect(executeScroll);
 
   return (
     <>
-      <main className="container justify-content-center bg-white " id="pedido">
+      <main className="container justify-content-center bg-white " id="pedido" ref={principal}>
         <h2 className='text-center'> Realizar Pedido</h2>
         <section className="row edicion-pedido ">
           {/*   <!-- Filtros de productos --> */}

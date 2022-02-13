@@ -55,3 +55,22 @@ li.active {
 .principal {
   min-height: 80vh;
 }
+
+.error404{
+  height: 80vh;
+}
+
+main{
+  margin-top: 10px;
+}
+
+.nav-link:hover{
+  color: #ddd;
+  
+}
+
+.link-activo{
+  text-decoration: underline;
+  color: #ddd !important;
+
+}
